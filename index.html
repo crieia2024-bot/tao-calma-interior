@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>El Camino Hacia la Calma Interior — Tao Te Ching | Mente en Calma</title>
   <meta name="description" content="Los 81 versos del Tao Te Ching explicados para la vida moderna. Una guía para quien busca paz interior sin dogmas, sin gurús, sin complicaciones." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
@@ -273,7 +275,8 @@
     .hero-book img {
       width: 230px;
       border-radius: 3px;
-      box-shadow: 0 32px 72px rgba(0,0,0,0.65), 0 8px 24px rgba(201,146,42,0.2);
+      mix-blend-mode: multiply;
+      box-shadow: none;
     }
 
     /* ═══ SECTION SHARED ═══ */
@@ -593,7 +596,44 @@
       margin: 0 auto 32px;
       line-height: 1.8;
     }
-    .btn-cta.wide { max-width: 380px; margin: 0 auto 14px; }
+    .btn-cta.wide { max-width: 420px; margin: 0 auto 14px; }
+
+    /* Hotmart custom button override */
+    .hotmart-btn-wrap {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    .hm-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: auto;
+      padding: 11px 28px;
+      background: linear-gradient(135deg, var(--saffron) 0%, var(--gold) 100%);
+      color: var(--ink);
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 11.5px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      border-radius: 2px;
+      box-shadow: 0 3px 14px rgba(201,146,42,0.35);
+      transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .hm-btn:hover {
+      opacity: 0.92;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(201,146,42,0.5);
+    }
+    .hm-btn.wide { display: inline-flex; margin: 0 auto; }
+    @media (max-width: 768px) {
+      .hm-btn { font-size: 11px; padding: 10px 22px; white-space: normal; text-align: center; }
+    }
     .cta-note { font-size: 12px; color: var(--warm-gray-lt); margin-top: 16px; font-style: italic; }
 
     /* ═══ FOOTER ═══ */
@@ -711,7 +751,10 @@
           <span class="hero-price-inst">En hasta 2x de $3.80 · Oferta por tiempo limitado.</span>
         </div>
         <div class="hotmart-btn-wrap" id="hero-cta-btn">
-          <a onclick="return false;" href="https://pay.hotmart.com/H106593194J?checkoutMode=2" class="hotmart-fb hotmart__button-checkout"><img src='https://static.hotmart.com/img/btn-buy-green.png' alt='Comprar agora'></a>
+          <a onclick="return false;" href="https://pay.hotmart.com/X106594389D?checkoutMode=2" class="hotmart-fb hotmart__button-checkout hm-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Quiero Encontrar Mi Calma
+          </a>
         </div>
         <div class="hero-seals">
           <span>🔒 Compra segura</span>
@@ -948,7 +991,10 @@
       <div class="divider-line" style="margin:20px auto 24px;"></div>
       <p class="cta-body">Cada pequeño momento de silencio interior transforma algo en ti — aunque no lo notes de inmediato. Tu camino de vuelta a la calma comienza con un solo paso.</p>
       <div class="hotmart-btn-wrap" id="cta-final-btn">
-        <a onclick="return false;" href="https://pay.hotmart.com/H106593194J?checkoutMode=2" class="hotmart-fb hotmart__button-checkout"><img src='https://static.hotmart.com/img/btn-buy-green.png' alt='Comprar agora'></a>
+        <a onclick="return false;" href="https://pay.hotmart.com/X106594389D?checkoutMode=2" class="hotmart-fb hotmart__button-checkout hm-btn wide">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Quiero Comenzar Mi Camino
+        </a>
       </div>
       <p class="cta-note">🔒 Compra segura · ⚡ Acceso inmediato · ↩️ 7 días de garantía total</p>
     </div>
