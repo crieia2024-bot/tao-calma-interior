@@ -622,9 +622,11 @@
       .price-card.featured { order: -1; }
     }
     @media (max-width: 768px) {
-      nav { padding: 12px 20px; }
-      .nav-links { gap: 16px; }
-      .nav-links a { font-size: 11px; }
+      nav { padding: 12px 16px; }
+      .nav-logo { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px; }
+      .nav-logo .yin { font-size: 15px; margin-right: 5px; }
+      .nav-links { gap: 12px; }
+      .nav-links a { font-size: 10px; }
 
       .hero-inner { grid-template-columns: 1fr; padding: 50px 24px 44px; gap: 36px; }
       .hero-books { order: -1; }
@@ -633,8 +635,29 @@
       .hero-desc { max-width: 100%; }
 
       .reveal-inner { grid-template-columns: 1fr; gap: 30px; }
-      .paths-grid { grid-template-columns: 1fr; }
-      .path-card-featured { order: -1; }
+
+      /* Paths carousel on mobile */
+      .paths-grid {
+        grid-template-columns: unset;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        padding-bottom: 12px;
+        margin-left: -24px;
+        margin-right: -24px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .paths-grid::-webkit-scrollbar { display: none; }
+      .path-card {
+        flex: 0 0 82vw;
+        max-width: 320px;
+        scroll-snap-align: center;
+      }
+      .path-card-featured { order: unset; flex: 0 0 88vw; max-width: 340px; }
 
       .test-grid { grid-template-columns: 1fr; gap: 16px; }
       .sec-pad { padding: 52px 24px; }
@@ -1147,30 +1170,6 @@
       <div class="divider-line" style="margin:20px auto 24px;"></div>
       <p class="cta-body">Cada pequeño momento de silencio interior transforma algo en ti — aunque no lo notes de inmediato.</p>
       <p class="cta-body" style="font-family:'IM Fell English',serif; font-style:italic; color:var(--crimson);">Cada pequeño aporte mantiene vivo este espacio de calma.</p>
-
-      <!-- Pricing repetido -->
-      <div class="pricing-grid" style="margin-top:32px; max-width:860px; margin-left:auto; margin-right:auto;">
-        <div class="price-card">
-          <div class="pc-label">Ebook I</div>
-          <h3 class="pc-title">Tao Te Ching</h3>
-          <div class="pc-price" style="font-size:24px;">$4.99</div>
-          <a href="https://pay.hotmart.com/C106852250J?checkoutMode=2" onclick="return false;" class="pc-btn hotmart-fb hotmart__button-checkout">Llevar solo este</a>
-        </div>
-        <div class="price-card featured">
-          <div class="pc-best">Más elegido</div>
-          <div class="pc-label">Colección</div>
-          <h3 class="pc-title">Ambos Juntos</h3>
-          <div class="pc-old">$9.98</div>
-          <div class="pc-price">$6.99</div>
-          <a href="https://pay.hotmart.com/E106852574Y?checkoutMode=2" onclick="return false;" class="pc-btn hotmart-fb hotmart__button-checkout">Quiero los dos</a>
-        </div>
-        <div class="price-card">
-          <div class="pc-label">Ebook II</div>
-          <h3 class="pc-title">Meditación Taoísta</h3>
-          <div class="pc-price" style="font-size:24px;">$4.99</div>
-          <a href="https://pay.hotmart.com/K106852303G?checkoutMode=2" onclick="return false;" class="pc-btn hotmart-fb hotmart__button-checkout">Llevar solo este</a>
-        </div>
-      </div>
 
       <p class="cta-note">🔒 Compra segura · ⚡ Acceso inmediato · ↩️ 7 días de garantía total</p>
     </div>
