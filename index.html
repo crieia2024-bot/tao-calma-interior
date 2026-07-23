@@ -288,38 +288,6 @@
     .path-list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
     .path-card-1 .path-list li::before { background: var(--gold); }
     .path-card-2 .path-list li::before { background: var(--teal-lt); }
-    .path-price {
-      font-family: 'Cinzel', serif;
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--crimson);
-      margin: 20px 0 14px;
-      text-align: center;
-    }
-    .path-price.teal { color: var(--teal); }
-    .path-btn {
-      display: block;
-      width: 100%;
-      padding: 12px 20px;
-      font-family: 'Cinzel', serif;
-      font-size: 10.5px;
-      font-weight: 700 !important;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none !important;
-      text-align: center;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: opacity 0.2s, transform 0.15s;
-      background: var(--parchment) !important;
-      color: var(--ink) !important;
-      border: 1.5px solid rgba(201,146,42,0.5) !important;
-      box-shadow: none !important;
-    }
-    .path-btn-teal {
-      border-color: rgba(30,107,92,0.45) !important;
-    }
-    .path-btn:hover { opacity: 0.88; transform: translateY(-1px); }
 
     /* ═══ SECTION 4 — QUOTE ═══ */
     .quote-sec { background: var(--green-dark); padding: 70px 40px; position: relative; overflow: hidden; }
@@ -694,8 +662,6 @@
             <li>Filosofía taoísta sin dogmas</li>
             <li>Comprensión profunda del Wu Wei</li>
           </ul>
-          <div class="path-price">$4.99</div>
-          <a href="https://pay.hotmart.com/X106594389D?checkoutMode=2" onclick="return false;" class="path-btn hotmart-fb hotmart__button-checkout">Solo este libro</a>
         </div>
         <div class="path-card path-card-2">
           <div class="path-num">Camino 2</div>
@@ -711,8 +677,6 @@
             <li>Rituales diarios de silencio activo</li>
             <li>Prácticas para la mente en movimiento</li>
           </ul>
-          <div class="path-price teal">$4.99</div>
-          <a href="#ebook2" class="path-btn path-btn-teal">Solo este libro</a>
         </div>
       </div>
     </div>
@@ -896,7 +860,6 @@
           <div class="pc-label">Colección</div>
           <h3 class="pc-title">Ambos Juntos</h3>
           <div class="pc-divider"></div>
-          <img src="collection_books.png" alt="Colección Mente en Calma" style="width:100%; max-width:220px; margin:0 auto 16px; display:block; border-radius:4px;" />
           <p class="pc-desc">Filosofía + Práctica · La experiencia completa</p>
           <ul class="pc-features">
             <li>Tao Te Ching (81 versos)</li>
@@ -1042,6 +1005,30 @@
       <div class="divider-line" style="margin:20px auto 24px;"></div>
       <p class="cta-body">Cada pequeño momento de silencio interior transforma algo en ti — aunque no lo notes de inmediato.</p>
       <p class="cta-body" style="font-family:'IM Fell English',serif; font-style:italic; color:var(--crimson);">Cada pequeño aporte mantiene vivo este espacio de calma.</p>
+
+      <!-- Pricing repetido -->
+      <div class="pricing-grid" style="margin-top:32px; max-width:860px; margin-left:auto; margin-right:auto;">
+        <div class="price-card">
+          <div class="pc-label">Ebook I</div>
+          <h3 class="pc-title">Tao Te Ching</h3>
+          <div class="pc-price" style="font-size:24px;">$4.99</div>
+          <a href="https://pay.hotmart.com/X106594389D?checkoutMode=2" onclick="return false;" class="pc-btn hotmart-fb hotmart__button-checkout">Llevar solo este</a>
+        </div>
+        <div class="price-card featured">
+          <div class="pc-best">Más elegido</div>
+          <div class="pc-label">Colección</div>
+          <h3 class="pc-title">Ambos Juntos</h3>
+          <div class="pc-old">$9.98</div>
+          <div class="pc-price">$6.99</div>
+          <a href="https://pay.hotmart.com/X106594389D?checkoutMode=2" onclick="return false;" class="pc-btn hotmart-fb hotmart__button-checkout">Quiero los dos</a>
+        </div>
+        <div class="price-card">
+          <div class="pc-label">Ebook II</div>
+          <h3 class="pc-title">Meditación Taoísta</h3>
+          <div class="pc-price" style="font-size:24px;">$4.99</div>
+          <a href="#ebook2" class="pc-btn">Llevar solo este</a>
+        </div>
+      </div>
 
       <p class="cta-note">🔒 Compra segura · ⚡ Acceso inmediato · ↩️ 7 días de garantía total</p>
     </div>
