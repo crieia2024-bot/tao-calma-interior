@@ -635,29 +635,8 @@
       .hero-desc { max-width: 100%; }
 
       .reveal-inner { grid-template-columns: 1fr; gap: 30px; }
-
-      /* Paths carousel on mobile */
-      .paths-grid {
-        grid-template-columns: unset;
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        gap: 16px;
-        padding-bottom: 12px;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 24px;
-        padding-right: 24px;
-      }
-      .paths-grid::-webkit-scrollbar { display: none; }
-      .path-card {
-        flex: 0 0 82vw;
-        max-width: 320px;
-        scroll-snap-align: center;
-      }
-      .path-card-featured { order: unset; flex: 0 0 88vw; max-width: 340px; }
+      .paths-grid { grid-template-columns: 1fr; }
+      .path-card-featured { order: -1; }
 
       .test-grid { grid-template-columns: 1fr; gap: 16px; }
       .sec-pad { padding: 52px 24px; }
