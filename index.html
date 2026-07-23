@@ -438,7 +438,7 @@
     .pc-desc { font-size: 12.5px; line-height: 1.6; margin-bottom: 20px; }
     .price-card:not(.featured) .pc-desc { color: var(--warm-gray-lt); }
     .price-card.featured .pc-desc { color: rgba(228,210,174,0.6); }
-    .pc-old { font-size: 13px; color: rgba(228,210,174,0.35); text-decoration: line-through; margin-bottom: 2px; }
+    .pc-old { font-size: 17px; color: rgba(228,210,174,0.5); text-decoration: line-through; margin-bottom: 4px; letter-spacing: 0.02em; }
     .pc-price { font-family: 'Cinzel', serif; font-size: 32px; font-weight: 700; margin-bottom: 24px; }
     .price-card:not(.featured) .pc-price { color: var(--ink); }
     .price-card.featured .pc-price { color: var(--gold); }
@@ -448,17 +448,29 @@
       padding: 13px 20px;
       font-family: 'Cinzel', serif;
       font-size: 11px;
-      font-weight: 700;
+      font-weight: 700 !important;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      text-decoration: none;
+      text-decoration: none !important;
       border-radius: 30px;
       transition: opacity 0.2s, transform 0.15s;
       cursor: pointer;
+      text-align: center;
     }
     .pc-btn:hover { opacity: 0.9; transform: translateY(-1px); }
-    .price-card:not(.featured) .pc-btn { background: var(--parchment); color: var(--ink); border: 1.5px solid rgba(201,146,42,0.4); }
-    .price-card.featured .pc-btn { background: linear-gradient(135deg, var(--saffron), var(--gold)); color: var(--ink); }
+    .price-card:not(.featured) .pc-btn {
+      background: var(--parchment) !important;
+      color: var(--ink) !important;
+      border: 1.5px solid rgba(201,146,42,0.5) !important;
+      box-shadow: none !important;
+      font-size: 11px !important;
+      padding: 13px 20px !important;
+    }
+    .price-card.featured .pc-btn {
+      background: linear-gradient(135deg, var(--saffron), var(--gold)) !important;
+      color: var(--ink) !important;
+      border: none !important;
+    }
     .pricing-note { font-size: 12px; color: var(--warm-gray-lt); margin-top: 24px; font-style: italic; }
     .pc-divider { width: 40px; height: 1px; background: rgba(201,146,42,0.2); margin: 0 auto 20px; }
     .price-card.featured .pc-divider { background: rgba(201,146,42,0.4); }
@@ -822,7 +834,7 @@
   </section>
 
   <!-- ═══ SECCIÓN PRICING ═══ -->
-  <section class="pricing-sec sec-pad" id="precio">
+  <section class="pricing-sec sec-pad" id="precio" style="padding-top: 40px;">
     <div class="sec-inner wide">
       <p class="sec-label">Elige tu camino</p>
       <h2 class="sec-title center ink">Elige Lo Que Necesitas</h2>
