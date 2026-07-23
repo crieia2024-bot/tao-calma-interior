@@ -268,7 +268,7 @@
     .path-card-featured .path-book-img img {
       width: auto;
       max-width: 100%;
-      height: 180px;
+      height: 230px;
       object-fit: contain;
       mix-blend-mode: normal;
     }
@@ -336,8 +336,16 @@
       font-size: 20px;
       color: rgba(228,210,174,0.55);
       text-decoration: line-through;
-      margin-bottom: 2px;
     }
+    .path-price-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin: 10px 0 6px;
+    }
+    .path-price-row .path-price,
+    .path-price-row .path-price-old { margin: 0; }
     .path-savings {
       display: inline-block;
       background: rgba(201,146,42,0.2);
@@ -355,13 +363,13 @@
     .path-includes {
       list-style: none;
       text-align: left;
-      margin: 12px 0 16px;
+      margin: 8px 0 10px;
       width: 100%;
     }
     .path-includes li {
-      font-size: 12px;
+      font-size: 11.5px;
       color: rgba(228,210,174,0.75);
-      padding: 5px 0;
+      padding: 4px 0;
       border-bottom: 1px solid rgba(201,146,42,0.12);
       display: flex;
       align-items: flex-start;
@@ -787,8 +795,10 @@
             <li>Tao Te Ching — Los 81 Versos Explicados para la Vida Moderna</li>
             <li>El Arte de Sentarse y Olvidar — Meditación Taoísta para Silenciar la Mente</li>
           </ul>
-          <div class="path-price-old">$9.98</div>
-          <div class="path-price gold">$6.99</div>
+          <div class="path-price-row">
+            <div class="path-price-old">$9.98</div>
+            <div class="path-price gold">$6.99</div>
+          </div>
           <span class="path-savings">🏷 Ahorras $3.00</span>
           <a href="https://pay.hotmart.com/X106594389D?checkoutMode=2" onclick="return false;" class="path-btn gold-btn hotmart-fb hotmart__button-checkout">Quiero los dos</a>
         </div>
