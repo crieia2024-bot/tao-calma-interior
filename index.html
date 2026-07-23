@@ -265,6 +265,13 @@
       mix-blend-mode: multiply;
       transition: transform 0.3s;
     }
+    .path-card-featured .path-book-img img {
+      width: auto;
+      max-width: 100%;
+      height: 180px;
+      object-fit: contain;
+      mix-blend-mode: normal;
+    }
     .path-card:hover .path-book-img img { transform: scale(1.04) rotate(-1deg); }
     .path-book-name {
       font-family: 'Cinzel', serif;
@@ -774,7 +781,7 @@
           <div class="path-num" style="margin-top:6px;">Colección Completa</div>
           <h3 class="path-title">Ambos Juntos</h3>
           <div class="path-book-img">
-            <img src="collection_books.png" alt="Colección Mente en Calma" style="mix-blend-mode:normal; width:260px; max-width:100%;" />
+            <img src="collection_books.png" alt="Colección Mente en Calma" />
           </div>
           <ul class="path-includes">
             <li>Tao Te Ching — Los 81 Versos Explicados para la Vida Moderna</li>
